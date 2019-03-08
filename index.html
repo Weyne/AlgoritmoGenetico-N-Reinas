@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Algoritmo Genético - N Reinas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+	</head>
+	<body>
+		<center>
+			<h1>ALGORITMO GENÉTICO - N Reinas</h1>
+			<div style="justify-content: center">
+			<table>
+				<tr>
+					<td align="right">N° de Reinas:</td>
+					<td><input type="text" id="txtNumReinas" class="myInput" /></td>
+				</tr>
+				<tr>
+					<td align="right">Población:</td>
+					<td><input type="text" id="txtPoblacion" class="myInput" /></td>
+				</tr>
+				<tr>
+					<td align="right">Limite Generaciones:</td>
+					<td><input type="text" id="txtGeneraciones" class="myInput" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right">
+						<button id="btnGenerar" class="myButton">Generar</button>
+						<button id="btnResolver" class="myButton"style="display: none;">Resolver</button>
+					</td>
+				</tr>
+			</table>
+				
+			</div>
+		</center>
+		<br/>
+		<center><div id="texto"></div></center>
+		<div id="contenido"></div>
+		<div id="solucion"></div>
+		<script src="jquery-1.12.2.min.js"></script> 
+		<script type="application/javascript" src="algoritmoGenetico.js"></script> 
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#txtNumReinas').focus();
+			});
+		</script>
+	</body>
+</html>
